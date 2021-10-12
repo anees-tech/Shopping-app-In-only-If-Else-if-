@@ -48,7 +48,7 @@ let name, item, netPrice, quantity, GrosePrice;
                     alert(" ok ");
                 }
             
-               if( !(student =="yes")){
+               if( !(student == "yes") || !(student=="Yes") || !(student=="YES") ){
                 document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is  RS.13000 " +" <br> " + " Your Total Price is " + "RS. "+ GrosePrice );
                } 
             }
@@ -95,7 +95,7 @@ let name, item, netPrice, quantity, GrosePrice;
                     alert(" ok ");
                 }
             
-               if( !(student =="yes")){
+               if( !(student == "yes") || !(student=="Yes") || !(student=="YES") ){
                 document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS.14000 "+" <br> " + "Your Total Price is " + "RS. "+ GrosePrice );
                }
             }
@@ -142,7 +142,7 @@ let name, item, netPrice, quantity, GrosePrice;
                     alert(" ok ");
                 }
             
-               if( !(student =="yes")){
+               if(  !(student == "yes") || !(student=="Yes") || !(student=="YES") ){
                 document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS.20000 "+" <br> " + "Your Total Price is " + "RS. "+ GrosePrice );
                }
             }
