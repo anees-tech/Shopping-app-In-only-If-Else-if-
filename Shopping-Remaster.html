@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Remasters</title>
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        let name, item, netPrice, quantity, Price, GrossPrice;
+        var yourCLass;
+        let student, discount, discountPrice;
+        name = prompt("Enter your name please.");
+        
+        item =prompt("Enter Item Please.");
+        
+            
+        
+         if ( (item=="T.V") || (item=="t.v" || (item=="tv")) ) {
+                quantity= parseInt(prompt("Enter Quantity."));
+                Price =  parseInt(prompt("Enter TV's Price"));
+                GrossPrice = Price*quantity;
+            
+                student =prompt("Are you Student. YES or NOT");
+
+                if ( (student == "yes") || (student=="Yes") || (student=="YES") ){ 
+                     yourCLass = prompt("Ok! Please Tell us, In which class do you read?");
+                      
+                        if( (yourCLass=="primary" || (yourCLass=="middle") ) ){
+                            discount = GrossPrice*10/100;
+                            netPrice= GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 10%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass =="secondry") || (yourCLass=="higher")){
+                            discount = GrossPrice*15/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 15%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price  + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass == "graduated") || (yourCLass=="BS") ){
+                            discount = GrossPrice*20/100/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 20%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                       }
+                       else{
+                            if((yourCLass=="Phd") || (yourCLass=="M.Phil")){
+                                discount = GrossPrice*25/100;
+                                netPrice = GrossPrice-discount;
+                                discountPrice = document.write( "<b>"+ " you have 25%  discount. Which is "+ discount + "</b>");
+                                document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. " + GrossPrice + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                            }
+             
+                        }
+                    }
+                    else{
+                        alert(" ok ");
+                    }
+            
+               if( !(student =="yes") && !(student=="Yes") && !(student =="YES") ){
+                document.write("Hello " + "<b> " +name +"</b>" +" Your Discount is 0%.<br> " +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price +" <br>" + "Your Total Price is " + "RS. "+ GrossPrice );
+               } 
+            }
+            // this is main item.
+        else if ( (item=="LCD") || (item=="lcd") || (item=="LED") ) {
+                quantity= parseInt(prompt("Enter Quantity."));
+                Price =  parseInt(prompt("Enter LCD's Price"));
+                GrossPrice = Price*quantity;
+                
+              
+             student =prompt("Are you Student. YES or NOT");
+
+                if ( (student == "yes") || (student=="Yes") || (student=="YES") ){ 
+                     yourCLass = prompt("Ok! Please Tell us, In which class do you read?");
+                      
+                        if( (yourCLass=="primary" || (yourCLass=="middle") ) ){
+                            discount = GrossPrice*10/100;
+                            netPrice= GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 10%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass =="secondry") || (yourCLass=="higher")){
+                            discount = GrossPrice*15/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 15%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass == "graduated") || (yourCLass=="BS") ){
+                            discount = GrossPrice*20/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 20%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                       }
+                       else{
+                            if((yourCLass=="Phd") || (yourCLass=="M.Phil")){
+                                discount = GrossPrice*25/100;
+                                netPrice = GrossPrice-discount;
+                                discountPrice = document.write( "<b>" + " you have 25%  discount. Which is "+ discount +" </b><br> ");
+                                document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                            }
+             
+                        }
+                    }
+                    else{
+                    alert(" ok ");
+                }
+            
+               if( !(student =="yes") && !(student=="Yes") && !(student =="YES") ){
+                document.write("Hello " + "<b> " +name +"</b>"+"Your Discount is 0%.<br>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price+ " <br> " + "Your Total Price is " + "RS. "+ GrossPrice );
+               }
+            }
+        else if ( (item=="Book") || (item=="BOOK") || (item=="book") ) {
+                quantity= parseInt(prompt("Enter Quantity."));
+                Price =  parseInt(prompt("Enter Book's Price"));
+                GrossPrice = Price*quantity;
+
+                
+              
+             student =prompt("Are you Student. YES or NOT");
+
+                if ( (student == "yes") || (student=="Yes") || (student=="YES") ){ 
+                     yourCLass = prompt("Ok! Please Tell us, In which class do you read?");
+                      
+                        if( (yourCLass=="primary" || (yourCLass=="middle") ) ){
+                            discount = GrossPrice*10/100;
+                            netPrice= GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 10%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>" + " 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass =="secondry") || (yourCLass=="higher")){
+                            discount = GrossPrice*15/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 15%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                        }
+                        else if( (yourCLass == "graduated") || (yourCLass=="BS") ){
+                            discount = GrossPrice*20/100;
+                            netPrice = GrossPrice-parseInt(discount);
+                            discountPrice = document.write( "<b>" + " you have 20%  discount. Which is "+ discount +" </b><br> ");
+                            document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                       }
+                       else{
+                            if((yourCLass=="Phd") || (yourCLass=="M.Phil")){
+                                discount = GrossPrice*25/100;
+                                netPrice = GrossPrice-pasreInt(discount);
+                                discountPrice = document.write( "<b>" + " you have 25%  discount. Which is "+ discount +" </b><br> ");
+                                document.write("Hello " + "<b> " +name +"</b>" +" Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price + "<br>" + "Your Grossly Price is " + "RS. "+ GrossPrice + "<br> "+ "And " + "Your Total price is : " +"RS."+ netPrice );
+                            }
+             
+                        }
+                    }
+                    else{
+                    alert(" ok ");
+                }
+            
+               if( !(student =="yes") && !(student=="Yes") && !(student =="YES") ){
+                document.write("Hello " + "<b> " +name +"</b>" +" Your Discount is 0%.<br> "+ "  Thanks for shopping. <br>" + "Item : " + item + "<br>"+ " Quantity " + quantity +"<br>"+" 1 Item price is RS. "+ Price+" <br> " + "Your Total Price is " + "RS. "+ GrossPrice );
+               }
+            }
+                        
+                        
+
+        else {
+            document.write("Hello "+ name +" Sorry this item is not availible in this store.");
+        }
+        
+
+    </script>
+
+
+</body>
+</html>
